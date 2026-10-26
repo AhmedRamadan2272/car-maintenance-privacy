@@ -89,10 +89,10 @@
 <main>
 <article id="ar" lang="ar">
   <h2>سياسة الخصوصية</h2>
-  <p class="updated">آخر تحديث: 25 أكتوبر 2026</p>
+  <p class="updated">آخر تحديث: 26 أكتوبر 2026</p>
 
   <p>«صيانة العربية» تطبيق بيساعدك تتابع مواعيد صيانة عربيتك.</p>
-  <p class="highlight"><strong>كل بياناتك بتفضل على موبايلك.</strong> التطبيق مفيهوش حسابات، ومش بيبعت أي بيانات لأي سيرفر، ومفيهوش إعلانات ولا أدوات تحليل.</p>
+  <p class="highlight"><strong>كل بياناتك بتفضل على موبايلك.</strong> التطبيق مفيهوش حسابات ولا إعلانات ولا أدوات تحليل. الإنترنت بيُستخدم بس علشان التطبيق يجيب التحديثات (شوف «التحديثات» تحت)، ومفيش أي حاجة من بيانات عربيتك بتطلع من موبايلك.</p>
 
   <h3>البيانات اللي التطبيق بيستخدمها</h3>
   <div class="table-wrap">
@@ -103,13 +103,21 @@
       <tr><td><strong>الموقع (GPS)</strong>، لو فعّلت «اكتشاف ببلوتوث العربية»</td><td>حساب <strong>المسافة</strong> اللي العربية مشيتها في كل رحلة، حتى والتطبيق مقفول</td><td>بنحفظ المسافة ووقت البداية والنهاية بس. <strong>المسار والأماكن مش بيتحفظوا خالص</strong></td></tr>
       <tr><td><strong>البلوتوث</strong>، لو فعّلت «اكتشاف ببلوتوث العربية»</td><td>بداية الرحلة لما الموبايل يتوصل ببلوتوث عربيتك ونهايتها لما يفصل</td><td>اسم وعنوان جهاز البلوتوث اللي اخترته، على موبايلك بس</td></tr>
       <tr><td>الإشعارات</td><td>تذكيرك بقراءة العداد ومواعيد الصيانة والرحلة الشغّالة</td><td>—</td></tr>
+      <tr><td>معرّف تثبيت Firebase (رقم عشوائي للتطبيق على موبايلك، مش مربوط بيك ولا بحسابك)</td><td>جلب تحديثات قائمة العربيات ومعرفة لو فيه نسخة جديدة من التطبيق لازم تتنزل</td><td>بيتبعت لـ Google Firebase Remote Config</td></tr>
     </tbody>
   </table>
   </div>
   <p>تتبّع الرحلات <strong>مقفول من الأول</strong>. مش بيشتغل غير لما تفعّله بنفسك من الإعدادات، وبعد ما التطبيق يشرحلك هيستخدم الموقع في إيه. وتقدر تقفله في أي وقت.</p>
 
   <h3>المشاركة</h3>
-  <p><strong>مش بنشارك أي بيانات مع أي حد</strong>، ومش بنبيعها. التطبيق مفيهوش اتصال بالإنترنت.</p>
+  <p><strong>مش بنشارك أي بيانات مع أي حد</strong>، ومش بنبيعها. بيانات عربيتك ورحلاتك وموقعك عمرها ما بتتبعت لأي سيرفر.</p>
+
+  <h3>التحديثات</h3>
+  <p>التطبيق بيكلّم خدمتين من جوجل علشان يفضل محدّث:</p>
+  <ul>
+    <li><strong>Google Firebase Remote Config:</strong> بيجيب قائمة العربيات الأحدث ورقم أقدم نسخة مسموح بيها من التطبيق. علشان كده بيبعت معرّف تثبيت Firebase ومعلومات أساسية زي نسخة التطبيق. القائمة بتتحفظ على موبايلك، فالتطبيق بيشتغل عادي من غير إنترنت. <a href="https://firebase.google.com/support/privacy">خصوصية Firebase</a>.</li>
+    <li><strong>Google Play:</strong> بيعرف لو فيه نسخة جديدة على المتجر ويعرض عليك تنزلها.</li>
+  </ul>
 
   <h3>النسخ الاحتياطي</h3>
   <ul>
@@ -129,10 +137,10 @@
 
 <article id="en" lang="en">
   <h2>Privacy Policy</h2>
-  <p class="updated">Last updated: October 25, 2026</p>
+  <p class="updated">Last updated: October 26, 2026</p>
 
   <p>Car Maintenance (صيانة العربية) helps you keep track of your car's service schedule.</p>
-  <p class="highlight"><strong>All your data stays on your phone.</strong> The app has no accounts, sends no data to any server, and has no ads or analytics.</p>
+  <p class="highlight"><strong>All your data stays on your phone.</strong> The app has no accounts, ads or analytics. It goes online only to fetch updates (see “Updates” below); none of your car's data leaves your phone.</p>
 
   <h3>Data the app uses</h3>
   <div class="table-wrap">
@@ -143,13 +151,21 @@
       <tr><td><strong>Location (GPS)</strong>, if you turn on car Bluetooth detection</td><td>Measuring the <strong>distance</strong> of each drive, including when the app is closed</td><td>Only the distance and start/end time. <strong>No route or places are stored</strong></td></tr>
       <tr><td><strong>Bluetooth</strong>, if you turn on car Bluetooth detection</td><td>Starting a trip when the phone connects to your car and ending it when it disconnects</td><td>The name and address of the device you picked, on your phone only</td></tr>
       <tr><td>Notifications</td><td>Odometer and maintenance reminders, and the trip in progress</td><td>—</td></tr>
+      <tr><td>Firebase installation ID (a random ID for the app on your phone, not linked to you or an account)</td><td>Fetching car catalog updates and whether a newer version of the app is required</td><td>Sent to Google Firebase Remote Config</td></tr>
     </tbody>
   </table>
   </div>
   <p>Trip tracking is <strong>off by default</strong>. It only starts after you turn it on in Settings and the app has explained how location is used, and you can turn it off at any time.</p>
 
   <h3>Sharing</h3>
-  <p><strong>We don't share or sell any data.</strong> The app does not connect to the internet.</p>
+  <p><strong>We don't share or sell any data.</strong> Your car, trip and location data are never sent to any server.</p>
+
+  <h3>Updates</h3>
+  <p>The app uses two Google services to stay up to date:</p>
+  <ul>
+    <li><strong>Google Firebase Remote Config:</strong> fetches the latest car catalog and the oldest app version still allowed. To do this it sends a Firebase installation ID and basic information such as the app version. The catalog is saved on your phone, so the app works offline. <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>.</li>
+    <li><strong>Google Play:</strong> checks whether a newer version is in the store and offers to install it.</li>
+  </ul>
 
   <h3>Backups</h3>
   <ul>
